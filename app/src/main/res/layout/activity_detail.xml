@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgPrimary"
+    tools:context=".DetailAct">
+
+
+    <ImageView
+        android:id="@+id/mv_detail_photo"
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/bg_mv_photo" />
+
+    <ImageView
+        android:id="@+id/mv_photo"
+        android:layout_width="125dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="160dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="@+id/mv_detail_photo"
+        app:layout_constraintTop_toTopOf="@+id/mv_detail_photo"
+        android:contentDescription="@string/mv_photo" />
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@+id/mv_photo"
+        app:layout_constraintTop_toBottomOf="@+id/mv_detail_photo">
+
+        <TextView
+            android:id="@+id/mv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mmedium"
+            android:hint="@string/mv_name"
+            android:textColor="@color/txtPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mv_genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mregular"
+            android:hint="@string/mv_genre"
+            android:textColor="@color/txtPrimary"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/mv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mlight"
+            android:hint="@string/mv_date"
+            android:textColor="@color/txtPrimary"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bg_layout"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mv_photo">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mmedium"
+            android:text="@string/overview"
+            android:textColor="@color/txtPrimary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/mregular"
+            android:hint="@string/mv_desc"
+            android:textColor="@color/txtPrimary"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

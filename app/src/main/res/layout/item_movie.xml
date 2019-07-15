@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/img_photo"
+        android:layout_width="110dp"
+        android:layout_height="165dp"
+        android:contentDescription="@string/mv_photo" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/img_photo"
+        android:hint="@string/mv_name"
+        android:fontFamily="@font/mmedium"
+        android:textSize="18sp"
+        android:textColor="@color/txtPrimary"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_name"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/img_photo"
+        android:textSize="12sp"
+        android:fontFamily="@font/mlight"
+        android:textColor="@color/txtPrimary"
+        android:text="@string/mv_date" />
+
+    <TextView
+        android:id="@+id/txt_genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_date"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_toEndOf="@+id/img_photo"
+        android:textSize="12sp"
+        android:fontFamily="@font/mregular"
+        android:textColor="@color/txtPrimary"
+        android:hint="@string/mv_genre" />
+
+</RelativeLayout>
